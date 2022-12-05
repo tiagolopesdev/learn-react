@@ -1,37 +1,13 @@
-/* * {
-    margin: 0%;    
-} */
-
 .container {
   min-height: 100vh;
-  background: #eee;
+  background: rgb(247, 247, 247);
   padding: 20px;
   max-width: 1200px;
   margin: auto;
 }
 
-.posts {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));    
-  gap: 20px;   
-}
-
-.post {
-  background: #fff;
-  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);    
-  transition: transform 300ms ease-in-out;
-  border-radius: 25px;
-}
-
-.post:hover {
-  transform: scale(1.05);
-}
-
-.post-content {
-  padding: 20px;
-}
-
-
-.post img {
-  max-width: 100%;
+.button-container {
+  min-height: 60px;
+  display: flex;
+  align-items: flex-end;
 }
