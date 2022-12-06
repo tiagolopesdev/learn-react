@@ -11,3 +11,13 @@
   display: flex;
   align-items: flex-end;
 }
+
+.textNotFound {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  background-color: rgba(173, 216, 230, 0.589);
+  padding: 20px;
+  margin: 0px 50px 0px 50px;
+  border-radius: 15px
+}
