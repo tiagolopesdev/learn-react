@@ -53,6 +53,14 @@ export class Home extends Component {
     const { posts, page, postsPerPage, allPosts, searchValue } = this.state;
     const noMorePosts = page + postsPerPage >= allPosts.length;
 
+    const filterPosts = !!searchValue ?
+      allPosts.filter(post => {
+        return post.title.toLowerCase().includes(
+          searchValue.toLowerCase()
+        );
+      })  
+      : posts;
+
     return (
       <section className="container">
 
@@ -68,7 +76,7 @@ export class Home extends Component {
           type="search"
         /> <br /><br /><br />
 
-        <Posts posts={posts} />
+        <Posts posts={filterPosts} />
 
         <div className="button-container">
           {!searchValue && (
