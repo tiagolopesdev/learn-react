@@ -7,6 +7,7 @@ export const TextInput = ({ handlerChange, searchValue }) => {
             onChange={handlerChange}
             value={searchValue}
             type="search"
+            placeholder="Busque um card pelo título"
         />
     );
 }
