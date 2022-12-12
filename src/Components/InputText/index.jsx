@@ -8,6 +8,6 @@ export const TextInput = ({ handlerChange, searchValue }) => {
             value={searchValue}
             type="search"
             placeholder="Busque um card pelo título"
-        />
-    );
+        />        
+    );    
 }
